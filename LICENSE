@@ -1,0 +1,64 @@
+ReguNav™ Platform — Mixed-License Notice
+========================================
+
+Copyright (c) 2026 Regunav Inc. All rights reserved.
+
+This repository contains the source code of the ReguNav™ multi-framework
+AI & data compliance platform.
+
+MIXED LICENSING — read carefully.
+
+1. PROPRIETARY (default for the repository)
+   Unless a sub-directory contains its own LICENSE file declaring otherwise,
+   all code in this repository is proprietary to Regunav Inc.
+   No part of the proprietary code may be reproduced, distributed, modified,
+   sub-licensed, or used to create competing services, in any form or by any
+   means, without prior written permission of Regunav Inc.
+
+   Specifically proprietary:
+     - apps/*                         all front-end applications
+     - services/api                   public API surface implementation
+     - services/webhooks              webhook router
+     - services/mcp-server            MCP server implementation
+     - services/contact               contact intake worker
+     - packages/engines/*             compliance engines (graph, workflow,
+                                      ranker, taxonomy, classification, FRIA,
+                                      governance, risk-navigator, etc.)
+     - packages/auth-core             authorization helpers
+     - packages/ui-shared             shared UI components
+     - packages/seed-data             industry profile packs
+     - packages/frameworks            framework dictionaries (the
+                                      machine-readable structure +
+                                      crosswalks are proprietary)
+     - prisma/*                       data model
+     - infra/*, config/*              deployment infrastructure
+     - .github/workflows/*            CI/CD pipelines
+     - scripts/*                      operational scripts
+
+2. APACHE-2.0 (developer-facing components — for ecosystem adoption)
+   The following sub-directories are licensed under the Apache License,
+   Version 2.0 (see ./LICENSE-APACHE.txt):
+
+     - packages/sdk                   TypeScript SDK
+     - packages/cli                   CLI
+     - packages/types                 public TypeScript type contracts
+     - packages/rails-registry        rail name + path catalogue
+     - packages/skus                  plan + entitlement helper
+
+   Each Apache-2.0 sub-directory carries its own LICENSE file. In case of
+   any conflict, the LICENSE file in the sub-directory governs.
+
+3. TRADEMARK
+   "ReguNav", "ReguNav™", "Regunav Inc.", and the ◈ logomark are trademarks
+   of Regunav Inc. The Apache-2.0 license does NOT grant trademark rights.
+   For trademark policy: https://regunav.com/legal/trademark.
+
+4. THIRD-PARTY CODE
+   Third-party libraries are licensed under their respective licenses; see
+   package.json files for the authoritative list.
+
+5. WARRANTY DISCLAIMER
+   ReguNav™ proprietary software is provided "AS IS", without warranty of
+   any kind. See your ReguNav customer agreement for service-level warranties.
+
+For commercial licensing or evaluation: legal@regunav.com.
