@@ -148,11 +148,35 @@ The current authority versions tracked in v0.1:
 ## Citing the framework
 
 > ReguNav Compliance-to-Architecture Framework™, v0.1 (2026).
-> Regunav Inc. https://regunav.com/framework
+> Regunav Inc. https://framework.regunav.com
+
+## Scope of openness
+
+The artefacts published in this repository are **structural** only:
+
+- the eight typed layers and their public field names;
+- a small end-to-end seed dataset for illustration;
+- JSON Schemas for evidence objects;
+- the citation + extension procedure.
+
+Everything that makes the running system non-trivial — regulatory-scope
+inference, applicability decision trees, confidence scoring, document-
+ingestion pipelines, AI-assisted classification, control-ranking logic,
+architecture recommendation, evidence inference, policy-as-code generation,
+regulatory change diffing, and the operational dashboards / agents that
+consume this graph — is **not** within the scope of this open
+specification. Those layers live in the ReguNav™ commercial engine
+(`regunav/app`) and are not licensed by this Apache-2.0 publication.
+
+Implementations of this open framework do **not** confer any licence under
+patents or other intellectual-property rights held by Regunav Inc. that
+cover the commercial engine. Apache-2.0's patent grant covers only the
+contributions made through this repository.
 
 ## Trademark
 
-ReguNav™ is a trademark of Regunav Inc. The framework is published openly
-under Apache-2.0; the trademark is reserved for use by the maintainer in
-authoritative releases. Forks may use the data but should not invoke the
-trademark.
+ReguNav™ and Compliance-to-Architecture Framework™ are trademarks of
+Regunav Inc. The framework is published openly under Apache-2.0; the
+trademarks are reserved for use by the maintainer in authoritative
+releases. Forks may use the data but should not invoke the trademarks
+on derivative or competing implementations.
